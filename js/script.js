@@ -720,7 +720,7 @@ class KimikoSanctuary {
                     messageEl.parentNode.removeChild(messageEl);
                 }
             }, 300);
-        }, 2000);
+        }, 1000);
     }
 
     // Test all buttons functionality
