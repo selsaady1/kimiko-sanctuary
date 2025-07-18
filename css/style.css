@@ -1263,6 +1263,19 @@ body {
         white-space: normal;
         text-align: center;
     }
+    
+    /* Fix footer display on mobile */
+    .sanctuary-footer {
+        padding: 20px 15px;
+        margin-top: 30px;
+    }
+    
+    .sanctuary-footer p {
+        font-size: 1rem;
+        line-height: 1.4;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1325,6 +1338,17 @@ body {
     
     .detail-text p {
         font-size: 0.85rem;
+    }
+    
+    /* Additional footer improvements for very small screens */
+    .sanctuary-footer {
+        padding: 15px 10px;
+        margin-top: 20px;
+    }
+    
+    .sanctuary-footer p {
+        font-size: 0.9rem;
+        line-height: 1.3;
     }
 }
 
