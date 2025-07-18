@@ -953,7 +953,7 @@ body {
     line-height: 1.5;
 }
 
-/* Responsive Zoom */
+    /* Responsive Zoom */
 @media (max-width: 768px) {
     .zoom-main {
         grid-template-columns: 1fr;
@@ -963,6 +963,7 @@ body {
     .zoom-content {
         margin: 20px;
         padding: 20px;
+        max-height: 85vh;
     }
     
     .zoom-header h2 {
@@ -975,6 +976,19 @@ body {
     
     .detail-icon {
         font-size: 1.5rem;
+    }
+    
+    /* Ensure zoom content doesn't overflow on small screens */
+    .zoom-details {
+        gap: 15px;
+    }
+    
+    .detail-text h4 {
+        font-size: 1.1rem;
+    }
+    
+    .detail-text p {
+        font-size: 0.9rem;
     }
 }
 
@@ -1152,11 +1166,19 @@ body {
 @media (max-width: 768px) {
     .sanctuary {
         padding: 10px;
-        padding-top: 120px;
+        padding-top: 20px;
     }
     
     .sanctuary-header h1 {
         font-size: 2rem;
+    }
+    
+    /* Make navigation static on mobile instead of fixed */
+    .sanctuary-nav {
+        position: static;
+        transform: none;
+        margin: 20px auto;
+        width: fit-content;
     }
     
     .nav-container {
@@ -1209,6 +1231,38 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    
+    /* Fix zoom close button positioning on mobile */
+    .zoom-close {
+        top: 10px;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    /* Improve zoom header spacing to avoid overlap */
+    .zoom-header {
+        padding-right: 50px;
+        margin-bottom: 20px;
+    }
+    
+    .zoom-header h2 {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+    
+    /* Fix candle hint positioning on mobile */
+    .zoom-candle-hint {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 10px;
+        font-size: 0.9rem;
+        white-space: normal;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1232,6 +1286,45 @@ body {
     
     .candle {
         max-width: 60px;
+    }
+    
+    /* Additional mobile improvements for very small screens */
+    .zoom-content {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .zoom-header h2 {
+        font-size: 1.4rem;
+    }
+    
+    .zoom-close {
+        top: 8px;
+        right: 12px;
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+    
+    .zoom-header {
+        padding-right: 40px;
+    }
+    
+    .detail-item {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .detail-icon {
+        font-size: 1.3rem;
+    }
+    
+    .detail-text h4 {
+        font-size: 1rem;
+    }
+    
+    .detail-text p {
+        font-size: 0.85rem;
     }
 }
 
