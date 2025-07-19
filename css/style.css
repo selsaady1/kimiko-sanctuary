@@ -1292,10 +1292,7 @@ body {
         margin: 0;
     }
     
-    /* Ensure content doesn't get covered by footer */
-    .sanctuary-content {
-        padding-bottom: 120px;
-    }
+
 }
 
 @media (max-width: 480px) {
@@ -1382,10 +1379,7 @@ body {
         margin: 0;
     }
     
-    /* Ensure content doesn't get covered by footer on small screens */
-    .sanctuary-content {
-        padding-bottom: 100px;
-    }
+
 }
 
 /* Accessibility */
